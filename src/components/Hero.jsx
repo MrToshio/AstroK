@@ -1,13 +1,12 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
-import logo from '../assets/logo-big.png'
-
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import logo from "../assets/logo-big.png";
 
 const float = keyframes`
   50% {
     transform: translate(0, 20px);
   }
-`
+`;
 
 const StyledHero = styled.header`
   width: 90%;
@@ -17,7 +16,7 @@ const StyledHero = styled.header`
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  color: ${props => props.theme.black};
+  color: ${(props) => props.theme.black};
   position: relative;
   margin-top: 60px;
 
@@ -34,7 +33,7 @@ const StyledHero = styled.header`
     position: relative;
     @media (max-width: 899px) {
       width: 70vw;
-  }
+    }
   }
 
   p {
@@ -49,7 +48,7 @@ const StyledHero = styled.header`
   }
   .right {
     padding: 32px;
-    background: rgba(255, 255, 255, 0.90);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 16px;
     box-shadow: 0 31px 35px rgb(0 0 0 / 10%);
     position: relative;
@@ -62,8 +61,7 @@ const StyledHero = styled.header`
       font-weight: 800;
     }
   }
-`
-
+`;
 
 export function Hero() {
   return (
@@ -75,10 +73,14 @@ export function Hero() {
         <div className="right">
           <h1>Welcome to PepEclipse</h1>
           <p>
-            We are tired of all the scams that happen among tokens. So we decided to take matters into our own hands. That's why we created PepEclipse, with the intention of being 100% safe from rug pulls. How? Because we, the devs have no rugs to pull. This token is for you, let's moon.
+            We are tired of all the scams that happen among tokens. So we
+            decided to take matters into our own hands. That's why we created
+            PepEclipse, with the intention of being 100% safe from rug pulls.
+            How? Because we, the devs have no rugs to pull. This token is for
+            you, let's moon.
           </p>
         </div>
       </StyledHero>
     </>
-  )
+  );
 }

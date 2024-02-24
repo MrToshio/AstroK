@@ -1,31 +1,43 @@
-import React from 'react'
-import styled from 'styled-components'
-import Sky from 'react-sky'
-import { Hero } from './Hero'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoins, faRecycle, faFire, faMoneyBill, faUser, faCheck, faHourglass } from '@fortawesome/free-solid-svg-icons'
-import { StyledButton } from '../style/commonStyled'
-import locker from '../assets/locker.png'
-import coin from '../assets/coin.png'
-import community from '../assets/community.png'
-import liquidityPool from '../assets/liquiditypool.png'
-import ship from '../assets/space-ship.png'
-import rocket from '../assets/rocket.png'
-import pumpDump from '../assets/pump-dump.png'
-import managerNFT from '../assets/nft-manager.jpg'
-import designerNFT from '../assets/nft-designer.jpg'
-import devNFT from '../assets/nft-dev.jpg'
+import React from "react";
+import styled from "styled-components";
+import Sky from "react-sky";
+import { Hero } from "./Hero";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCoins,
+  faRecycle,
+  faFire,
+  faMoneyBill,
+  faUser,
+  faCheck,
+  faHourglass,
+} from "@fortawesome/free-solid-svg-icons";
+import { StyledButton } from "../style/commonStyled";
+import locker from "../assets/locker.png";
+import coin from "../assets/coin.png";
+import community from "../assets/community.png";
+import liquidityPool from "../assets/liquiditypool.png";
+import ship from "../assets/space-ship.png";
+import rocket from "../assets/rocket.png";
+import pumpDump from "../assets/pump-dump.png";
+import managerNFT from "../assets/nft-manager.jpg";
+import designerNFT from "../assets/nft-designer.jpg";
+import devNFT from "../assets/nft-dev.jpg";
 
 const StyledDashboard = styled.div`
-  background: rgb(222,168,218);
-  background: linear-gradient(135deg, rgba(161,209,224,0.2) 20%, rgba(222,168,218,0.2) 80%);
+  background: rgb(222, 168, 218);
+  background: linear-gradient(
+    135deg,
+    rgba(161, 209, 224, 0.2) 20%,
+    rgba(222, 168, 218, 0.2) 80%
+  );
   position: relative;
   overflow: hidden;
   #sky {
     z-index: 60 !important;
     transform: scale(2);
   }
-`
+`;
 
 const StyledGrid = styled.div`
   @media (max-width: 899px) {
@@ -33,12 +45,13 @@ const StyledGrid = styled.div`
     flex-direction: column;
   }
 
-  > div, article {
+  > div,
+  article {
     background: rgba(255, 255, 255, 0.96);
     border-radius: 16px;
     box-shadow: 0 31px 35px rgb(0 0 0 / 10%);
   }
-`
+`;
 
 const StyledArticle = styled.article`
   position: relative;
@@ -57,11 +70,11 @@ const StyledArticle = styled.article`
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     line-height: 1.2;
 
     small {
-      color: ${props => props.theme.black};
+      color: ${(props) => props.theme.black};
       font-size: 12px;
       font-weight: 400;
       padding-left: 10px;
@@ -70,12 +83,13 @@ const StyledArticle = styled.article`
   }
 
   p {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     font-size: 14px;
     margin-top: 30px;
   }
 
-  .flex, .left {
+  .flex,
+  .left {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,31 +104,31 @@ const StyledArticle = styled.article`
     width: 22px;
     height: 22px;
     border-radius: 5px;
-    background: rgba(161,209,224, 0.2);
-    border: 2px solid rgb(161,209,224);
+    background: rgba(161, 209, 224, 0.2);
+    border: 2px solid rgb(161, 209, 224);
     text-align: center;
     float: left;
     font-size: 12px;
     line-height: 18px;
     margin-right: 10px;
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
   }
 
   .left {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     font-weight: 600;
   }
   .right {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     font-size: 12px;
   }
 
   .bolder {
     font-weight: 700;
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     display: block;
   }
-`
+`;
 
 const StyledTokenomics = styled(StyledArticle)`
   padding: 60px 24px 0;
@@ -126,7 +140,6 @@ const StyledTokenomics = styled(StyledArticle)`
   @media (max-width: 899px) {
     position: relative;
   }
-
 
   .tokenomics {
     display: flex;
@@ -142,9 +155,13 @@ const StyledTokenomics = styled(StyledArticle)`
     .badge {
       flex: 1;
       border-radius: 100px;
-      background: rgb(222,168,218);
-      background: linear-gradient(90deg, rgba(222,168,218,0.96) 20%, rgba(161,209,224,0.96) 80%);
-      color: ${props => props.theme.background};
+      background: rgb(222, 168, 218);
+      background: linear-gradient(
+        90deg,
+        rgba(222, 168, 218, 0.96) 20%,
+        rgba(161, 209, 224, 0.96) 80%
+      );
+      color: ${(props) => props.theme.background};
       margin: 12px;
       display: flex;
       justify-content: center;
@@ -163,19 +180,19 @@ const StyledTokenomics = styled(StyledArticle)`
 
     .iconomic {
       font-size: 20px;
-      color: ${props => props.theme.background};
+      color: ${(props) => props.theme.background};
     }
 
     .left {
-      color: ${props => props.theme.background};
+      color: ${(props) => props.theme.background};
       margin-right: 20px;
     }
     .right {
       font-weight: 600;
-      color: ${props => props.theme.background};
+      color: ${(props) => props.theme.background};
     }
   }
-`
+`;
 
 const StyledFeatures = styled(StyledArticle)`
   grid-column: 1/4;
@@ -192,7 +209,6 @@ const StyledFeatures = styled(StyledArticle)`
       font-size: 20px;
       margin-left: 12px;
     }
-
   }
 
   .flexContent {
@@ -227,7 +243,7 @@ const StyledFeatures = styled(StyledArticle)`
     font-size: 20px;
     font-weight: 600;
     margin-top: 20px;
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     line-height: 1.2;
 
     small {
@@ -245,12 +261,12 @@ const StyledFeatures = styled(StyledArticle)`
   button {
     margin-top: 40px;
   }
-`
+`;
 
 export const StyledNftSection = styled.section`
   margin: 140px 0 0;
   padding: 24px;
-  color: ${props => props.theme.black};
+  color: ${(props) => props.theme.black};
   h4 {
     font-size: 30px;
     margin-bottom: 30px;
@@ -258,9 +274,8 @@ export const StyledNftSection = styled.section`
       font-size: 20px;
       margin-left: 12px;
     }
-
   }
-`
+`;
 
 const StyledNFT = styled(StyledArticle)`
   display: flex;
@@ -274,13 +289,13 @@ const StyledNFT = styled(StyledArticle)`
     margin: 0 12px;
     @media (max-width: 899px) {
       padding: 28px 12px;
-      border-bottom: 1px solid ${props => props.theme.border};
+      border-bottom: 1px solid ${(props) => props.theme.border};
       &:last-of-type {
         border-bottom: none;
       }
     }
     a {
-      color: #7BBDDF;
+      color: #7bbddf;
       font-weight: 600;
     }
     img {
@@ -292,7 +307,7 @@ const StyledNFT = styled(StyledArticle)`
       }
     }
   }
-`
+`;
 
 const StyledRoadMap = styled(StyledArticle)`
   background-color: transparent !important;
@@ -326,7 +341,7 @@ const StyledRoadMap = styled(StyledArticle)`
     height: 26px;
     border-radius: 26px;
     text-align: center;
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     margin-right: 16px;
     position: relative;
     top: -9px;
@@ -359,7 +374,7 @@ const StyledRoadMap = styled(StyledArticle)`
   }
 
   .text {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
     font-size: 16px;
     font-weight: 600;
     margin-top: -10px;
@@ -388,24 +403,22 @@ const StyledRoadMap = styled(StyledArticle)`
       font-size: 20px;
       margin-left: 12px;
     }
-
   }
-
-`
+`;
 
 export function Dashboard() {
   return (
-    <div style={{backgroundColor: 'white'}}>
+    <div style={{ backgroundColor: "white" }}>
       <StyledDashboard>
         <Sky
-            images={{
-              0: ship,
-              1: rocket,
-            }}
-            how={20}
-            time={20}
-            size={'50px'}
-          />
+          images={{
+            0: ship,
+            1: rocket,
+          }}
+          how={20}
+          time={20}
+          size={"50px"}
+        />
         <Hero />
         <StyledTokenomics>
           <div className="tokenomics">
@@ -450,7 +463,7 @@ export function Dashboard() {
               </div>
               <div className="right">
                 <div>Marketcap</div>
-                $261,225
+                $0
               </div>
             </div>
             <div className="badge">
@@ -460,8 +473,7 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="right">
-                <div>Holders</div>
-                529
+                <div>Holders</div>0
               </div>
             </div>
           </div>
@@ -474,29 +486,38 @@ export function Dashboard() {
             </h4>
             <div className="flexContent">
               <div className="items one">
-                <img src={locker} alt=""/>
+                <img src={locker} alt="" />
                 <h3>Highly Secured</h3>
-                <p>All initial liquidity provided has been locked during presale DXSale. The contract owner will be renounced at the end of the presale, leaving the contract trustless for the PepEclipse community.</p>
+                <p>
+                  All initial liquidity provided has been locked during presale
+                  DXSale. The contract owner will be renounced at the end of the
+                  presale, leaving the contract trustless for the PepEclipse
+                  community.
+                </p>
               </div>
               <div className="items two">
-                <img src={coin} alt=""/>
+                <img src={coin} alt="" />
                 <h3>RFI Static Rewards</h3>
-                <p>3% of every transaction is taken and re distributed to all $ASTK holders. The burn address is also a holder thus each transaction helps deflate the supply.</p>
+                <p>
+                  5% of every transaction will be reinvested into the growth of
+                  the project. Either by ads or by rebuying token for CEX
+                  listing
+                </p>
               </div>
               <div className="items">
-                <img src={community} alt=""/>
+                <img src={community} alt="" />
                 <h3>Fair Launch & Community Built</h3>
-                <p>Community driven & fair launch. There is a pre-sale on DxSale. Dev will participate in the fair launch with everyone else.</p>
+                <p>
+                  Community driven & fair launch. There is a pre-sale on DxSale.
+                  Dev will participate in the fair launch with everyone else.
+                </p>
               </div>
               <div className="items">
-                <img src={liquidityPool} alt=""/>
-                <h3>Automatic Liquidity Pool</h3>
-                <p>3% of every transaction contributes toward automatically generating further liquidity on Pancake Swap. Benefiting long term for PepEclipse holders the most!</p>
-              </div>
-              <div className="items">
-                <img src={pumpDump} alt=""/>
+                <img src={pumpDump} alt="" />
                 <h3>Anti Pump-Dump-Exist Whales</h3>
-                <p>Whale cannot exit without redistribution of tokens to holders!</p>
+                <p>
+                  Whale cannot exit without redistribution of tokens to holders!
+                </p>
               </div>
               <div className="items">
                 <h3>
@@ -505,19 +526,17 @@ export function Dashboard() {
                 </h3>
                 <p>
                   <i>
-                    "The audit will be started once ownership is renounced after the pre-sale!"
+                    "The audit will be started once ownership is renounced after
+                    the pre-sale!"
                   </i>
                   <span className="bolder">- Soon™ </span>
                 </p>
                 <a href="https://solidity.finance/">
-                  <StyledButton>
-                    Read more about them
-                  </StyledButton>
+                  <StyledButton>Read more about them</StyledButton>
                 </a>
               </div>
             </div>
           </StyledFeatures>
-
 
           <StyledRoadMap>
             <h4>
@@ -529,37 +548,34 @@ export function Dashboard() {
                 <div className="icon complete">
                   <FontAwesomeIcon icon={faCheck} />
                 </div>
-                <div className="text">Presale live on DXSales <span className="orange">Done</span></div>
+                <div className="text">
+                  Presale live on DXSales <span className="orange">Done</span>
+                </div>
               </div>
               <div className="row">
-              <div className="icon complete">
+                <div className="icon notComplete">
                   <FontAwesomeIcon icon={faCheck} />
                 </div>
                 <div className="text">Listing on PANCAKESWAP </div>
               </div>
               <div className="row">
-                <div className="icon notComplete">
-                </div>
+                <div className="icon notComplete"></div>
                 <div className="text">Marketing on Poocoin </div>
               </div>
               <div className="row">
-                <div className="icon notComplete">
-                </div>
+                <div className="icon notComplete"></div>
                 <div className="text">Reach 10000 holders </div>
               </div>
               <div className="row">
-                <div className="icon notComplete">
-                </div>
+                <div className="icon notComplete"></div>
                 <div className="text">Audit PepEclipse Smart Contract </div>
               </div>
               <div className="row">
-                <div className="icon notComplete">
-                </div>
+                <div className="icon notComplete"></div>
                 <div className="text">Reach 30000 holders </div>
               </div>
               <div className="row">
-                <div className="icon notComplete">
-                </div>
+                <div className="icon notComplete"></div>
                 <div className="text">Launch holder contest ($1000) </div>
               </div>
               <div className="row">
@@ -587,5 +603,5 @@ export function Dashboard() {
         </StyledGrid>
       </StyledDashboard>
     </div>
-  )
+  );
 }
