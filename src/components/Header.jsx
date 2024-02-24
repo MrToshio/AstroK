@@ -64,7 +64,7 @@ export function Header({ onclick }) {
         <span>PepEclipse</span>
       </StyledLogoContainer>
       <StyledNotVisibleXS>
-        <a href="https://dxsale.app/app/pages/defipresale?saleID=124&chain=BSC">
+        <a href="https://dxsale.app/">
           <StyledPancakeButton>
             <img src={pancakeSvg} alt="Pancakeswap" />
             Buy on DxSale
