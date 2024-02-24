@@ -166,19 +166,19 @@ export function Menu({ menuOpen, onclick }) {
       <StyledMenuBlock>
         <StyledMenuTitle>Important links</StyledMenuTitle>
         <StyledMenuItems>
-          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x44946E7384D2B74dc65dcb2f94EcE40d5a193232">
+          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=">
             <img src={pancakeSvg} alt="Pancakeswap" />
             <span>Buy on Pancakeswap</span>
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
-          <a href="https://charts.bogged.finance/?token=0x44946E7384D2B74dc65dcb2f94EcE40d5a193232">
+          <a href="https://charts.bogged.finance/">
             <FontAwesomeIcon icon={faChartLine} />
             <span>Chart</span>
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
-          <a href="https://bscscan.com/token/0x44946E7384D2B74dc65dcb2f94EcE40d5a193232">
+          <a href="https://bscscan.com/token/">
             <FontAwesomeIcon icon={faChartBar} />
             <span>BSC Scan</span>
           </a>
@@ -196,12 +196,6 @@ export function Menu({ menuOpen, onclick }) {
           <a href="https://twitter.com/pepeclipse">
             <FontAwesomeIcon icon={faTwitter} />
             <span>Twitter</span>
-          </a>
-        </StyledMenuItems>
-        <StyledMenuItems>
-          <a href="https://reddit.com/r/PepEclipse">
-            <FontAwesomeIcon icon={faReddit} />
-            <span>Reddit</span>
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
