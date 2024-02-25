@@ -549,7 +549,7 @@ export function Dashboard() {
                   <FontAwesomeIcon icon={faCheck} />
                 </div>
                 <div className="text">
-                  Presale live on DXSales <span className="orange">Done</span>
+                  Presale live on PinkSale <span className="orange">Done</span>
                 </div>
               </div>
               <div className="row">

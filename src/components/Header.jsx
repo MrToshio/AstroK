@@ -64,10 +64,10 @@ export function Header({ onclick }) {
         <span>PepEclipse</span>
       </StyledLogoContainer>
       <StyledNotVisibleXS>
-        <a href="https://dxsale.app/">
+        <a href="https://pinksale.finance/">
           <StyledPancakeButton>
             <img src={pancakeSvg} alt="Pancakeswap" />
-            Buy on DxSale
+            Buy on PinkSale
           </StyledPancakeButton>
         </a>
       </StyledNotVisibleXS>
