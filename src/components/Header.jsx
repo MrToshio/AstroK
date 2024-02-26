@@ -64,7 +64,7 @@ export function Header({ onclick }) {
         <span>PepEclipse</span>
       </StyledLogoContainer>
       <StyledNotVisibleXS>
-        <a href="https://pinksale.finance/">
+        <a href="https://www.pinksale.finance/launchpad/0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF?chain=BSC">
           <StyledPancakeButton>
             <img src={pancakeSvg} alt="Pancakeswap" />
             Buy on PinkSale

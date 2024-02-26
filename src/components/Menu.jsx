@@ -166,19 +166,19 @@ export function Menu({ menuOpen, onclick }) {
       <StyledMenuBlock>
         <StyledMenuTitle>Important links</StyledMenuTitle>
         <StyledMenuItems>
-          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=">
+          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF">
             <img src={pancakeSvg} alt="Pancakeswap" />
             <span>Buy on Pancakeswap</span>
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
-          <a href="https://charts.bogged.finance/">
+          <a href="https://charts.bogged.finance/page=chart&c=bsc&t=0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF">
             <FontAwesomeIcon icon={faChartLine} />
             <span>Chart</span>
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
-          <a href="https://bscscan.com/token/">
+          <a href="https://bscscan.com/token/0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF">
             <FontAwesomeIcon icon={faChartBar} />
             <span>BSC Scan</span>
           </a>

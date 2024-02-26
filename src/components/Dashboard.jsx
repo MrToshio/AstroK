@@ -430,7 +430,7 @@ export function Dashboard() {
               </div>
               <div className="right">
                 <div>Max Supply</div>
-                100,000,000,000,000
+                420,000,000,000,000
               </div>
             </div>
             <div className="badge">
@@ -441,18 +441,7 @@ export function Dashboard() {
               </div>
               <div className="right">
                 <div>Circulating</div>
-                70,000,000,000,000
-              </div>
-            </div>
-            <div className="badge">
-              <div className="left">
-                <div className="iconomic">
-                  <FontAwesomeIcon icon={faFire} />
-                </div>
-              </div>
-              <div className="right">
-                <div>Burned</div>
-                30,000,000,000,000
+                420,000,000,000,000
               </div>
             </div>
             <div className="badge">
@@ -490,8 +479,8 @@ export function Dashboard() {
                 <h3>Highly Secured</h3>
                 <p>
                   All initial liquidity provided has been locked during presale
-                  DXSale. The contract owner will be renounced at the end of the
-                  presale, leaving the contract trustless for the PepEclipse
+                  PinkSale. The contract owner will be renounced at the end of
+                  the presale, leaving the contract trustless for the PepEclipse
                   community.
                 </p>
               </div>
@@ -508,8 +497,9 @@ export function Dashboard() {
                 <img src={community} alt="" />
                 <h3>Fair Launch & Community Built</h3>
                 <p>
-                  Community driven & fair launch. There is a pre-sale on DxSale.
-                  Dev will participate in the fair launch with everyone else.
+                  Community driven & fair launch. There is a pre-sale on
+                  PinkSale. Dev will participate in the fair launch with
+                  everyone else.
                 </p>
               </div>
               <div className="items">
@@ -553,9 +543,7 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="row">
-                <div className="icon notComplete">
-                  <FontAwesomeIcon icon={faCheck} />
-                </div>
+                <div className="icon notComplete"></div>
                 <div className="text">Listing on PANCAKESWAP </div>
               </div>
               <div className="row">
