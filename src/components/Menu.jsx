@@ -178,7 +178,7 @@ export function Menu({ menuOpen, onclick }) {
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
-          <a href="https://bscscan.com/token/0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF">
+          <a href="https://bscscan.com/token/0xAf65739577557405259C3332baCDf7568799FFB6">
             <FontAwesomeIcon icon={faChartBar} />
             <span>BSC Scan</span>
           </a>
