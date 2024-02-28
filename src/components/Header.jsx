@@ -61,7 +61,7 @@ export function Header({ onclick }) {
     <StyledHeaderContainer>
       <StyledLogoContainer>
         <img className="logo" src={logo} alt="lunar-eclipse-logo" />
-        <span>PepEclipse</span>
+        <span>Pepeclipse</span>
       </StyledLogoContainer>
       <StyledNotVisibleXS>
         <a href="https://www.pinksale.finance/launchpad/0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF?chain=BSC">

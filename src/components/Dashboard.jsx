@@ -552,7 +552,7 @@ export function Dashboard() {
               </div>
               <div className="row">
                 <div className="icon notComplete"></div>
-                <div className="text">Reach 10000 holders </div>
+                <div className="text">Reach 500 holders </div>
               </div>
               <div className="row">
                 <div className="icon notComplete"></div>
@@ -560,7 +560,7 @@ export function Dashboard() {
               </div>
               <div className="row">
                 <div className="icon notComplete"></div>
-                <div className="text">Reach 30000 holders </div>
+                <div className="text">Reach 1000 holders </div>
               </div>
               <div className="row">
                 <div className="icon notComplete"></div>
@@ -568,7 +568,7 @@ export function Dashboard() {
               </div>
               <div className="row">
                 <div className="icon notComplete" />
-                <div className="text">Reach 50000 holders</div>
+                <div className="text">Reach 2000 holders</div>
               </div>
               <div className="row">
                 <div className="icon notComplete" />

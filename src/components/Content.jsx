@@ -1,9 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import logo from '../assets/astro-logo.png'
-import { Routes } from './Routes'
-
+import logo from "../assets/astro-logo.png";
+import { Routes } from "./Routes";
 
 const StyledContentContainer = styled.div`
   margin-left: 200px;
@@ -12,18 +11,17 @@ const StyledContentContainer = styled.div`
     width: 100%;
     margin-left: 0;
   }
-`
+`;
 
 const StyledFooter = styled.footer`
-  background-color: ${props => props.theme.background};
+  background-color: ${(props) => props.theme.background};
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${props => props.theme.black};
+  color: ${(props) => props.theme.black};
   font-size: 25px;
   z-index: 99;
-
 
   img {
     width: 30px;
@@ -37,16 +35,16 @@ const StyledFooter = styled.footer`
     font-size: 18px;
     opacity: 0.4;
   }
-`
+`;
 
 export function Content() {
   return (
     <StyledContentContainer>
       <Routes />
       <StyledFooter>
-        <img src={logo} alt="lunar-eclipse-logo"/>
-        <span>PepEclipse</span>
+        <img src={logo} alt="lunar-eclipse-logo" />
+        <span>Pepeclipse</span>
       </StyledFooter>
     </StyledContentContainer>
-  )
+  );
 }

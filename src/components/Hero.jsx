@@ -71,11 +71,11 @@ export function Hero() {
           <img src={logo} alt="AstroPepe-logo" />
         </div>
         <div className="right">
-          <h1>Welcome to PepEclipse</h1>
+          <h1>Welcome to Pepeclipse</h1>
           <p>
             We are tired of all the scams that happen among tokens. So we
             decided to take matters into our own hands. That's why we created
-            PepEclipse, with the intention of being 100% safe from rug pulls.
+            Pepeclipse, with the intention of being 100% safe from rug pulls.
             How? Because we, the devs have no rugs to pull. This token is for
             you, let's moon.
           </p>

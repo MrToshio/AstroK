@@ -166,9 +166,9 @@ export function Menu({ menuOpen, onclick }) {
       <StyledMenuBlock>
         <StyledMenuTitle>Important links</StyledMenuTitle>
         <StyledMenuItems>
-          <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF">
+          <a href="https://www.pinksale.finance/launchpad/0x39C72a8A5E2000FB8F1688812fd9f7CC7491E7BF?chain=BSC">
             <img src={pancakeSvg} alt="Pancakeswap" />
-            <span>Buy on Pancakeswap</span>
+            <span>Buy on PinkSale</span>
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
@@ -193,7 +193,7 @@ export function Menu({ menuOpen, onclick }) {
           </a>
         </StyledMenuItems>
         <StyledMenuItems>
-          <a href="https://twitter.com/pepeclipse">
+          <a href="https://twitter.com/pepeclipsetoken">
             <FontAwesomeIcon icon={faTwitter} />
             <span>Twitter</span>
           </a>
