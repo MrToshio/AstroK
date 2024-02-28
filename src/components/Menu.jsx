@@ -187,7 +187,7 @@ export function Menu({ menuOpen, onclick }) {
       <StyledMenuBlock>
         <StyledMenuTitle>Socials</StyledMenuTitle>
         <StyledMenuItems>
-          <a href="https://t.me/+PZjgSm4vIPE2Mzk5">
+          <a href="https://t.me/PepeclipseToken">
             <FontAwesomeIcon icon={faTelegramPlane} />
             <span>Telegram</span>
           </a>

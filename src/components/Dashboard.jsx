@@ -471,7 +471,7 @@ export function Dashboard() {
           <StyledFeatures>
             <h4>
               Features
-              <small>Reasons why to own PepEclipse</small>
+              <small>Reasons why to own Pepeclipse</small>
             </h4>
             <div className="flexContent">
               <div className="items one">
@@ -480,7 +480,7 @@ export function Dashboard() {
                 <p>
                   All initial liquidity provided has been locked during presale
                   PinkSale. The contract owner will be renounced at the end of
-                  the presale, leaving the contract trustless for the PepEclipse
+                  the presale, leaving the contract trustless for the Pepeclipse
                   community.
                 </p>
               </div>
@@ -556,7 +556,7 @@ export function Dashboard() {
               </div>
               <div className="row">
                 <div className="icon notComplete"></div>
-                <div className="text">Audit PepEclipse Smart Contract </div>
+                <div className="text">Audit Pepeclipse Smart Contract </div>
               </div>
               <div className="row">
                 <div className="icon notComplete"></div>
