@@ -478,9 +478,12 @@ export function Dashboard() {
                 <img src={locker} alt="" />
                 <h3>Highly Secured</h3>
                 <p>
-                  All initial liquidity provided has been locked during presale
-                  PinkSale. The contract owner will be renounced at the end of
-                  the presale, leaving the contract trustless for the Pepeclipse
+                  All initial liquidity provided has been{" "}
+                  <a href="https://www.dx.app/dxlock/view/token-locker?address=0xfe85A257E34944caeFF82B6554E289e959d13b4a&chain=56">
+                    locked
+                  </a>
+                  . The contract owner will be renounced at the end of the
+                  presale, leaving the contract trustless for the Pepeclipse
                   community.
                 </p>
               </div>
@@ -543,7 +546,9 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="row">
-                <div className="icon notComplete"></div>
+                <div className="icon Complete">
+                  <FontAwesomeIcon icon={faCheck} />
+                </div>
                 <div className="text">Listing on PANCAKESWAP </div>
               </div>
               <div className="row">
